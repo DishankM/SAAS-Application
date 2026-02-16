@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { useAuth } from "@/lib/auth"
-import { SquidLogo } from "@/components/landing/squid-logo"
+import  SquidLogo from "../../../public/Vector.png"
 import { Eye, EyeOff, Loader2 } from "lucide-react"
 
 export default function SignupPage() {
@@ -50,7 +50,7 @@ export default function SignupPage() {
         <div className="pointer-events-none absolute -top-20 -right-20 h-[500px] w-[500px] rounded-full bg-[#7B4AE2]/15 blur-[120px]" aria-hidden="true" />
         <div className="pointer-events-none absolute -bottom-20 -left-20 h-[400px] w-[400px] rounded-full bg-[#E8505B]/10 blur-[100px]" aria-hidden="true" />
         <div className="relative z-10 text-center px-12">
-          <SquidLogo className="h-16 w-16 mx-auto mb-6" />
+          <img src={SquidLogo.src} alt="Squid Logo" />
           <h2 className="font-heading text-3xl font-bold text-white">Join Squid</h2>
           <p className="mt-3 text-white/40 text-sm leading-relaxed max-w-sm mx-auto">
             Create your free account and start building beautiful designs today.
@@ -62,7 +62,7 @@ export default function SignupPage() {
       <div className="flex flex-1 items-center justify-center px-6 py-12">
         <div className="w-full max-w-sm">
           <div className="lg:hidden flex items-center gap-2 mb-8">
-            <SquidLogo className="h-7 w-7" />
+            <img src={SquidLogo.src} alt="Squid Logo" />
             <span className="text-white font-heading text-lg font-bold">Squid</span>
           </div>
 
