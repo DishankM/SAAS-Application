@@ -11,11 +11,11 @@ const companies = [
 
 export function CompaniesSection() {
   return (
-    <section className="bg-black px-6 py-20">
-      <div className="mx-auto max-w-[1240px]">
+    <section className="bg-black ">
+      <div className="">
         
         {/* Main Dark Container */}
-        <div className="relative rounded-[48px] bg-[#12141D] px-6 pt-24 pb-60 text-center">
+        <div className="relative  bg-[#12141D] px-6 pt-24 pb-60 text-center">
           
           <h2 className="text-[48px] md:text-[68px] font-bold leading-[1.1] text-white tracking-tight">
             Companies we Worked

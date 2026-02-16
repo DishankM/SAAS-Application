@@ -3,25 +3,25 @@ import logo from '../../public/Vector.png'
 
 export function HeroSection() {
   return (
-    <section className="relative isolate min-h-screen overflow-hidden bg-[#03040a] text-white font-sans">
+    <section className="relative isolate min-h-screen overflow-hidden bg-[#000000] text-white font-sans">
       {/* Background grid lines */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-55"
+        className="pointer-events-none absolute inset-0 opacity-57"
         style={{
           backgroundImage:
-            "repeating-linear-gradient(to right, rgba(255,255,255,0) 0, rgba(255,255,255,0) 112px, rgba(255,255,255,0.08) 113px, rgba(255,255,255,0) 114px)",
+            "repeating-linear-gradient(to right, rgba(255,255,255,0) 0, rgba(255,255,255,0) 112px, rgba(255,255,255,0.09) 113px, rgba(255,255,255,0) 114px)",
         }}
       />
 
       {/* Background glow effects */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/2 top-[64px] h-16 w-16 -translate-x-1/2 rounded-full bg-white/30 blur-2xl" />
-        <div className="absolute left-[7%] top-[32%] h-32 w-32 rounded-full bg-[#c2c5dd]/45 blur-3xl" />
-        <div className="absolute right-[9%] top-[26%] h-28 w-28 rounded-full bg-[#c2c5dd]/45 blur-3xl" />
-      </div>
+        <div className="absolute left-1/2 top-[64px] h-16 w-16 -translate-x-1/2 rounded-full bg-white/20 blur-md" />
+        <div className="absolute left-[7%] top-[32%] h-32 w-32 rounded-full bg-[#c2c5dd]/25 blur-xl" />
+        <div className="absolute right-[9%] top-[26%] h-28 w-28 rounded-full bg-[#c2c5dd]/20 blur-xl" />
+      </div> 
 
       {/* Header */}
-      <header className="relative z-20 mx-auto flex w-full max-w-[1460px] items-center justify-between px-5 pt-7 sm:px-8 xl:px-14">
+      <header className="relative z-20 flex max-w-[1460px] items-center justify-between px-5 pt-7 sm:px-8 xl:px-14">
         <div className="flex items-center gap-2.5">
           <img src={logo.src} alt="Squid Logo" className="h-10 w-12 " />
           <span className="text-[35px] font-semibold leading-none tracking-[-0.03em]">Squid</span>
@@ -41,7 +41,7 @@ export function HeroSection() {
       </header>
 
       {/* Hero Content */}
-      <div className="relative z-20 mx-auto max-w-[1080px] px-4 pb-14 pt-16 text-center sm:px-6 md:pt-20 lg:pt-24">
+      <div className="relative z-20 mx-auto max-w-[1080px] px-4 pb-12 pt-16 text-center sm:px-6 md:pt-20 lg:pt-22">
         <p className=" text-[82px] font-semibold">
           Beautiful Landing Page
           <br />
@@ -165,7 +165,7 @@ export function HeroSection() {
       </div>
 
       {/* Bottom wave decoration - positioned at the very bottom, below feature boxes */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-[300px] md:h-[400px] lg:h-[524px]">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-[300px] md:h-[400px] lg:h-[524px] overflow-hidden">
         <svg viewBox="0 0 1600 440" preserveAspectRatio="none" className="h-full w-full">
           <defs>
             <linearGradient id="squid-wave" x1="0" y1="0" x2="1" y2="0">
